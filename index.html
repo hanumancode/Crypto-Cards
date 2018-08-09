@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crypto Cards</title>
+    <link rel="stylesheet" href="swiper.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -14,5 +15,66 @@
         </div>
 
     <script src="script.js"></script>
-</body>
-</html>
+    <script src="swiper.min.js"></script>
+
+ <!-- Swiper -->
+ <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgRect">
+                    <img src="img1.jpg">    
+                </div>
+                <div class="details">
+                        <div id="cryptoName">
+                            </div>
+                <h3 id="cryptoName"><br><span>Astronomer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgRect">
+                    <img src="img2.jpg">    
+                </div>
+                <div class="details">
+                <h3>Aristotle<br><span>Philosoper</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgRect">
+                    <img src="img3.jpg">    
+                </div>
+                <div class="details">
+                <h3>Shakespeare<br><span>Poet</span></h3>
+                </div>
+            </div>        
+   
+        </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="../dist/js/swiper.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 400,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+    
+    </body>
+    </html>

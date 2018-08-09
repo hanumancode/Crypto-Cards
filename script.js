@@ -1,5 +1,5 @@
 $.ajax({
-    url: 'https://api.coinmarketcap.com/v2/global/',
+    url: 'https://api.coinmarketcap.com/v2/ticker/?limit=10',
     type: 'GET',
     dataType: "json",
     success: displayAll
@@ -18,4 +18,6 @@ console.table(allData);
 
 //document.write(a);
 document.getElementById('coinData').innerHTML = JSON.stringify(allData);
+document.getElementById('cryptoName').innerHTML = JSON.stringify(data.data);
+
 }
