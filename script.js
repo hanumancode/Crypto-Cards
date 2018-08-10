@@ -9,22 +9,25 @@ function displayAll(data){
 
 allData = data.data;
 
-a = document.getElementById('coinData').innerHTML = JSON.stringify(allData);
+a = JSON.stringify(allData);
 
-console.log(typeof(allData));
+//console.log(typeof(allData));
 
 result = (allData["1"].name);
 
 var obj = JSON.parse(a);
 
-console.log(obj[2].circulating_supply);
-
-
-const cryptoData = obj[2].circulating_supply;
-console.log(cryptoData);
-
-document.getElementById('cryptoName').innerHTML = cryptoData;
-document.getElementById('cryptoSymbol').innerHTML = obj[2].symbol;;
-document.getElementById('cryptoRank').innerHTML = obj[2].rank;;
+Object.entries(obj).forEach(
+    ([key, value]) => console.log(key, value),
+    document.getElementById('cryptoName').innerHTML = obj[1].circulating_supply,
+    document.getElementById('cryptoSymbol').innerHTML = obj[1].symbol,
+    document.getElementById('cryptoRank').innerHTML = obj[1].rank,
+    document.getElementById('cryptoName2').innerHTML = obj[2].circulating_supply,
+    document.getElementById('cryptoSymbol2').innerHTML = obj[2].symbol,
+    document.getElementById('cryptoRank2').innerHTML = obj[2].rank,
+    document.getElementById('cryptoName3').innerHTML = obj[52].circulating_supply,
+    document.getElementById('cryptoSymbol3').innerHTML = obj[52].symbol,
+    document.getElementById('cryptoRank3').innerHTML = obj[52].rank
+);
 
 }
