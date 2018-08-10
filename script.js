@@ -7,17 +7,24 @@ $.ajax({
 
 function displayAll(data){
 
-//console.table(data.data);
-
-//a = data.data.active_cryptocurrencies
-// console.log(a);
-
 allData = data.data;
-console.table(allData);
+
+a = document.getElementById('coinData').innerHTML = JSON.stringify(allData);
+
+console.log(typeof(allData));
+
+result = (allData["1"].name);
+
+var obj = JSON.parse(a);
+
+console.log(obj[2].circulating_supply);
 
 
-//document.write(a);
-document.getElementById('coinData').innerHTML = JSON.stringify(allData);
-document.getElementById('cryptoName').innerHTML = JSON.stringify(data.data);
+const cryptoData = obj[2].circulating_supply;
+console.log(cryptoData);
+
+document.getElementById('cryptoName').innerHTML = cryptoData;
+document.getElementById('cryptoSymbol').innerHTML = obj[2].symbol;;
+document.getElementById('cryptoRank').innerHTML = obj[2].rank;;
 
 }
