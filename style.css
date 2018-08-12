@@ -52,3 +52,11 @@ h1 {
     text-align: center;
     padding-top: 30px;
 }
+
+
+#circ_supply {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    transform: translate(45%,-400%);
+}
