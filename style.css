@@ -2,61 +2,73 @@ body {
     background: lightblue;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color:#000;
+    color: #000;
     margin: 0;
     padding: 0;
-  }
-  .swiper-container {
+}
+
+.swiper-container {
     width: 100%;
     padding-top: 100px;
     padding-bottom: 50px;
-  }
-  .swiper-slide {
+}
+
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 350px;
     height: 400px;
     background: #fff;
-  }
+}
 
-  .swiper-slide .imgRect {
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-  }
+.swiper-slide .imgRect {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
 
-  .swiper-slide .imgRect img {
-      width: 100%;
-  }
+.swiper-slide .imgRect img {
+    width: 100%;
+}
 
-  .swiper-slide .details {
-      box-sizing: border-box;
-      font-size: 20px;
-      padding-top: 20px;
-  }
+.swiper-slide .details {
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 20px;
+}
 
-  .swiper-slide .details h3 {
-      margin: 0;
-      padding: 0;
-      font-size: 20px;
-      text-align: center;
-      line-height: 20px;
-  }
+.swiper-slide .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
 
-  .swiper-slide .details h3 span {
-      font-size: 16px;
-      color: rgb(122, 8, 36);
-  }
+.swiper-slide .details h3 span {
+    font-size: 16px;
+    color: rgb(122, 8, 36);
+}
 
 h1 {
     text-align: center;
     padding-top: 30px;
 }
 
-
 #circ_supply {
     font-size: 15px;
     margin: 0;
     padding: 0;
-    transform: translate(45%,-400%);
+    transform: translate(45%, -400%);
+}
+
+.coinmarketcap-currency-widget {
+    width: 23%;
+    margin: 10px 1%;
+    float: left;
+}
+
+.coinmarketcap-currency-widget div:nth-child(3) {
+    visibility: hidden;
+    border-bottom: none;
 }

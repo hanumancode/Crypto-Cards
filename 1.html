@@ -13,10 +13,7 @@
 </head>
 
 <body>
-    <div id="coinData">ddd
-        <p id="demo">fff</p>
-    </div>
-
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
     <script src="script.js"></script>
     <script src="swiper.min.js"></script>
 
@@ -24,37 +21,36 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="imgRect">
-                    <img src="BTC_logo.svg">
-                </div>
+                <div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="USD" data-secondary="BTC"></div>
                 <div class="details">
                     <div id="cryptoName"></div>
-                    <div class="cryptoSymbol"></div>
-                    <div id="cryptoRank"></div>
-                    <div id="cryptoSupply"></div>
 
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="imgRect">
-                    <img src="LTC.png">
-                </div>
+                <div class="coinmarketcap-currency-widget" data-currency="litecoin" data-base="USD" data-secondary="BTC"></div>
                 <div class="details">
                     <div class="cryptoName"></div>
-                    <div id="cryptoSymbol"></div>
-                    <div id="cryptoRank"></div>
-                    <div id="cryptoSupply"></div>
 
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="imgRect">
-                    <img src="xrp.png">
-                </div>
+                <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="USD" data-secondary="BTC"></div>
                 <div class="details">
                     <div id="cryptoName"></div>
-                    <div class="cryptoSymbol"></div>
-                    <div id="cryptoRank3"></div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coinmarketcap-currency-widget" data-currency="ripple" data-base="USD" data-secondary="BTC"></div>
+                <div class="details">
+                    <div id="cryptoName"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coinmarketcap-currency-widget" data-currency="tron" data-base="USD" data-secondary="BTC"></div>
+                <div class="details">
+                    <div id="cryptoName"></div>
                 </div>
             </div>
         </div>
